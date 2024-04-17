@@ -3,8 +3,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import { IonCol, IonGrid, IonInput, IonRow } from '@ionic/react';
 
-import Menu from './components/Menu';
-import Page from './pages/Page';
+import React from 'react';
 import Calendar from './pages/cal';
 import Search from './pages/search';
 import Upcoming from './pages/upcoming';
@@ -35,7 +34,7 @@ setupIonicReact();
 const App: React.FC = () => {
   return (
     <IonApp>
-      <IonReactRouter>
+      <IonRouterOutlet>
         <IonGrid style={{ height: '100vh', overflow: 'auto' }}>
           <IonRow>
             <IonCol>
@@ -51,7 +50,7 @@ const App: React.FC = () => {
             </IonCol>
           </IonRow>
         </IonGrid>
-      </IonReactRouter>
+      </IonRouterOutlet>
     </IonApp>
   );
 };

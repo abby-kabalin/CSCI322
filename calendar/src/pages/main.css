@@ -2,10 +2,7 @@
 * Custom Datetime Day Parts
 * -------------------------------------------
 */
-ion-datetime::part(calendar-month-year) {
-    color: #da5296;
 
-}
 
 ion-datetime::part(calendar-day) {
     color: #da5296;
